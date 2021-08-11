@@ -24,7 +24,9 @@ header>div{
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
-
+main{
+  background-color: grey;
+}
 /*
 banner image
 https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/melbourne.jpg
@@ -50,6 +52,8 @@ For banner over lay add this class to your div
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  justify-content: center;
+  align-items: center;
 }
 .banner__container:before {
   position: absolute;
@@ -57,24 +61,26 @@ For banner over lay add this class to your div
   right: 0;
   left: 0;
   bottom: 0;
-  /* background-color: rgba(0,0,0,0.4); */
+  background-color: rgba(0,0,0,0.4);
   content: "";
 }
 .banner__container div{
   color: white;
   flex-direction: column;
   align-items: center;
-  padding-top: 300px;
+  justify-content: center;
 }
 .banner__container div a{
   text-decoration: none;
-  background-color: red;
+  background-color: rgb(214, 63, 63);
   color: white;
   border-radius: 5%;
-  padding: 10px;
+  padding: 10px 50px;
   font-size: 15px;
   font-weight: bolder;
+  margin-top: 10px;
+  box-shadow: 0 5px 0 red;
 }
-/* .banner__container div h1{
-
-} */
+.banner__container div h1{
+  font-size: 60px;
+}
