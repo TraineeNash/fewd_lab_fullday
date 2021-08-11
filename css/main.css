@@ -85,13 +85,14 @@ For banner over lay add this class to your div
   font-size: 60px;
 }
 .middle__content{
-  background-color: rgb(240, 239, 239);
+  background-color: rgb(235, 232, 232);
   padding: 40px 5px;
   grid-template-columns: 1fr 1fr;
   gap: 50px;
 }
 .middle__content div{
-  border: 1px solid rgb(194, 191, 191);
+  /* border: 1px solid rgb(194, 191, 191); */
+  background-color: rgb(218, 218, 218);
 }
 .middle__content div h3{
   margin: 10px 0 10px 20px;
@@ -150,7 +151,7 @@ For banner over lay add this class to your div
 
 }
 [class^="item-"] div:last-child{
-  background-color: rgb(240, 239, 239);
+  background-color: rgb(218, 218, 218);
   padding: 20px 0 60px 20px;
 }
 .bottom__content .flex a{
