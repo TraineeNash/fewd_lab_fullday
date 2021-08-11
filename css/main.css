@@ -6,6 +6,9 @@ body {
 .flex{
   display: flex;
 }
+.grid{
+  display: grid;
+}
 header{
   align-items: center;
   justify-content: space-between;
@@ -23,9 +26,6 @@ header>div{
 }
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
-}
-main{
-  background-color: grey;
 }
 /*
 banner image
@@ -74,13 +74,103 @@ For banner over lay add this class to your div
   text-decoration: none;
   background-color: rgb(214, 63, 63);
   color: white;
-  border-radius: 5%;
+  border-radius: 5px;
   padding: 10px 50px;
   font-size: 15px;
   font-weight: bolder;
   margin-top: 10px;
-  box-shadow: 0 5px 0 red;
+  box-shadow: 0 3px 0 red;
 }
 .banner__container div h1{
   font-size: 60px;
+}
+.middle__content{
+  background-color: rgb(240, 239, 239);
+  padding: 40px 5px;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+.middle__content div{
+  border: 1px solid rgb(194, 191, 191);
+}
+.middle__content div h3{
+  margin: 10px 0 10px 20px;
+  font-weight: 900;
+}
+.middle__content div div{
+  background-color: white;
+  align-items: center;
+  padding: 15px;
+}
+.bottom__content{
+  background-color: white;
+  padding: 40px 5px;
+  justify-content: center;
+}
+.bottom__content .grid{
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  padding: 20px 40px;
+}
+.bottom__content .flex{
+  flex-direction: column;
+  align-items: center;
+}
+.bottom__content .flex h2{
+  font-size: 33px;
+  font-weight: 700;
+}
+.bottom__content .flex h3{
+  font-weight: 900;
+}
+.item-1 div:first-child{
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/fitzroy.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  color: black;
+  justify-content: center;
+}
+.item-2 div:first-child{
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/st-kilda.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  color: black;
+  justify-content: center;
+}
+.item-3 div:first-child{
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/central-business-district.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  color: black;
+  justify-content: center;
+}
+[class^="item-"] div:last-child{
+  background-color: rgb(221, 219, 219);
+  padding: 20px 0 60px 20px;
+}
+.bottom__content .flex a{
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
+  font-weight: 900;
+  background-color: rgb(233, 76, 76);
+  padding: 5px 40px;
+  border-radius: 5px;
+  box-shadow: 0 3px 0 red;
+}
+footer{
+  background-color: black;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 100px;
+}
+footer img{
+  margin-right: 10px;
 }
