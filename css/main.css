@@ -123,35 +123,29 @@ For banner over lay add this class to your div
 .bottom__content .flex h3{
   font-weight: 900;
 }
-.item-1 div:first-child{
-  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/fitzroy.jpg');
-  background-repeat: no-repeat;
+[class^="item-"] div:first-child{
+background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 300px;
-  color: black;
+  color: white;
   justify-content: center;
+  filter: brightness(70%);
+  /* background-color: rgba(0,0,0,0.4); */
+}
+.item-1 div:first-child{
+  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/fitzroy.jpg');
 }
 .item-2 div:first-child{
   background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/st-kilda.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 300px;
-  color: black;
-  justify-content: center;
+
 }
 .item-3 div:first-child{
   background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/central-business-district.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 300px;
-  color: black;
-  justify-content: center;
+
 }
 [class^="item-"] div:last-child{
-  background-color: rgb(221, 219, 219);
+  background-color: rgb(240, 239, 239);
   padding: 20px 0 60px 20px;
 }
 .bottom__content .flex a{
@@ -165,7 +159,7 @@ For banner over lay add this class to your div
   box-shadow: 0 3px 0 red;
 }
 footer{
-  background-color: black;
+  background-color: rgb(34, 34, 34);
   color: white;
   align-items: center;
   justify-content: center;
