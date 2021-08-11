@@ -55,7 +55,7 @@ For banner over lay add this class to your div
   justify-content: center;
   align-items: center;
 }
-.banner__container:before {
+.banner__container::before{
   position: absolute;
   top: 0;
   right: 0;
@@ -64,11 +64,12 @@ For banner over lay add this class to your div
   background-color: rgba(0,0,0,0.4);
   content: "";
 }
-.banner__container div{
+.banner__container .flex{
   color: white;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: absolute;
 }
 .banner__container div a{
   text-decoration: none;
@@ -137,7 +138,6 @@ For banner over lay add this class to your div
   background-position: center;
   color: white;
   justify-content: center;
-  filter: brightness(70%);
 }
 .item-1 div:first-child{
   background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/fitzroy.jpg');
