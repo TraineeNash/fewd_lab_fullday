@@ -138,6 +138,7 @@ For banner over lay add this class to your div
   background-position: center;
   color: white;
   justify-content: center;
+  filter: brightness(70%);
 }
 .item-1 div:first-child{
   background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/fitzroy.jpg');
